@@ -18,7 +18,7 @@
 <body>
   <div class="login">
     <h1>Login to Web App</h1>
-    <form method="post" action="">
+    <form method="post" action="servicios">
       <p><input type="text" name="login" value="" placeholder="Username or Email"></p>
       <p><input type="password" name="password" value="" placeholder="Password"></p>
       <p class="remember_me">

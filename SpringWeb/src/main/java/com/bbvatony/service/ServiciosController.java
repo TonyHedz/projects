@@ -13,12 +13,12 @@ public class ServiciosController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(ServiciosController.class);
 
-	@RequestMapping(value="/servicios", method = RequestMethod.GET)
+	@RequestMapping(value="/servicios", method = RequestMethod.POST)
 	public ModelAndView servicios(Model model) {
 		
 		logger.info("Bienvenido a los servicios disponibles");
 		
-		return new ModelAndView("home");
+		return new ModelAndView("servicios/home");
 	}
 
 }
