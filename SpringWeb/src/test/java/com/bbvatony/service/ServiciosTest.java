@@ -12,6 +12,7 @@ public class ServiciosTest {
 		ModelAndView view = controller.servicios(null);
 		Assert.assertNotNull(view.getViewName());
 		Assert.assertEquals("home", view.getViewName());
+		System.out.println("Test: "+ view.getViewName());
 	}
 
 }
