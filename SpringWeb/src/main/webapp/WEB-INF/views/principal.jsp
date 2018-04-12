@@ -14,6 +14,12 @@
   <title>Iniciar sesión</title>
   <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <link type="text/css" rel="stylesheet" href="<c:url value="/resources/estilos/formulario.css" />" >
+  <script type="text/javascript" src="<c:url value="/resources/jquery/jquery-1.8.0.min.js" />"></script>
+  <script type="text/javascript">
+  	$().ready(function(){
+  		alert("hello jQuery");
+  	});
+  </script>
 </head>
 <body>
   <div class="login">
