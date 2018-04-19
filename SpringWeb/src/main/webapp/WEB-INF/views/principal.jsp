@@ -14,19 +14,23 @@
   <title>Iniciar sesión</title>
   <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <link type="text/css" rel="stylesheet" href="<c:url value="/resources/estilos/formulario.css" />" >
-  <script type="text/javascript" src="<c:url value="/resources/jquery/jquery-1.8.0.min.js" />"></script>
-  <script type="text/javascript">
-  	$().ready(function(){
-  		alert("hello jQuery");
-  	});
-  </script>
+  <script type="text/javascript" src="<c:url value="/resources/jquery/jquery-1.8.0.min.js" />"></script> 
+  <script type="text/javascript" src="<c:url value="/resources/jquery/jquery.validate.js" />"></script>
+  <script type="text/javascript" src="<c:url value="/resources/js/form_login.js" />"></script> 
 </head>
 <body>
   <div class="login">
     <h1>Login to Web App</h1>
-    <form method="post" action="servicios">
-      <p><input type="text" name="login" value="" placeholder="Username or Email"></p>
-      <p><input type="password" name="password" value="" placeholder="Password"></p>
+    
+    <form id="frmLogin" class="styleForm" method="post" action="servicios">
+      <p>
+      	<label for="userLogin"></label>
+      	<input id="userLogin" type="text" name="userLogin" value="" placeholder="Username or Email">
+      </p>
+      <p>
+      	<label for="pwrdUser"></label>
+      	<input id="pwrdUser" type="password" name="pwrdUser" value="" placeholder="Password">
+      </p>
       <p class="remember_me">
         <label>
           <input type="checkbox" name="remember_me" id="remember_me">
@@ -35,6 +39,7 @@
       </p>
       <p class="submit"><input type="submit" name="commit" value="Login"></p>
     </form>
+    
   </div>
 
   <div class="login-help">

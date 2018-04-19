@@ -13,7 +13,6 @@
  * Original PSD by Orman Clark: http://goo.gl/D8zmk
  */
 
-@import "http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css";
 
 body {
   font: 13px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
@@ -184,4 +183,35 @@ input[type=submit]:active {
 .lt-ie9 input[type=text], .lt-ie9 input[type=password] {
   line-height: 34px;
 }
+
+
+/****** Estilos para las validaciones de los campos ******/
+
+form.styleForm{}
+
+#frmLogin label.error {
+	margin-left: 10px;
+	width: auto;
+	display: inline;
+}
+
+form.styleForm label.error {
+	/* remove the next line when you have trouble in IE6 with labels in list */
+	color: red;
+	font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
